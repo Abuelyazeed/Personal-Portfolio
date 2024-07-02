@@ -1,5 +1,5 @@
 import Input from '../common/Input';
-import styles from './Hero.module.css';
+import styles from './Contact.module.css';
 
 function Contact() {
   return (
@@ -30,6 +30,7 @@ function Contact() {
           placeholder="Message"
           required
         />
+        <input className="hover btn" type="submit" value="Submit" />
       </form>
     </section>
   );

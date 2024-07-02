@@ -5,8 +5,10 @@ export const ThemeContext = createContext({
   toggleTheme: () => {},
 });
 
-export function ThemeContextProvidor({ children }) {
-  const [theme, setTheme] = useState(() => localStorage.getItem || 'light');
+export function ThemeContextProvider({ children }) {
+  const [theme, setTheme] = useState(
+    () => localStorage.getItem('theme') || 'light'
+  );
 
   useEffect(() => {
     document.body.setAttribute('data-theme', theme);
@@ -14,7 +16,7 @@ export function ThemeContextProvidor({ children }) {
   }, [theme]);
 
   function handleTheme() {
-    console.log('theme switched');
+    console.log(theme);
     setTheme((PrevTheme) => (PrevTheme === 'light' ? 'dark' : 'light'));
   }
 

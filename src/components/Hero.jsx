@@ -2,16 +2,20 @@ import styles from './Hero.module.css';
 import heroImg from '../assets/hero-img.png';
 import sun from '../assets/sun.svg';
 import moon from '../assets/moon.svg';
-import linkedinIcon from '../assets/linkedin-light.svg';
-import githubIcon from '../assets/github-light.svg';
+import linkedinLight from '../assets/linkedin-light.svg';
+import linkedinDark from '../assets/linkedin-dark.svg';
+import githubLight from '../assets/github-light.svg';
+import githubDark from '../assets/github-dark.svg';
 import CV from '../assets/cv.pdf';
 import { useContext } from 'react';
-import { ThemeContext } from '../common/ThemeContextProvidor';
+import { ThemeContext } from '../common/ThemeContextProvider';
 
 function Hero() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const themeIcon = theme === 'light' ? sun : moon;
+  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const githubIcon = theme === 'light' ? githubLight : githubDark;
 
   return (
     <section id="hero" className={styles.container}>

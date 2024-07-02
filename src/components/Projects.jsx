@@ -1,8 +1,8 @@
 import styles from './Projects.module.css';
-import viberr from '../assets/viberr.png';
-import freshBurger from '../assets/fresh-burger.png';
-import hipsster from '../assets/hipsster.png';
-import fitLift from '../assets/fitlift.png';
+import PM from '../assets/logo.png';
+import investmentCalc from '../assets/investmentApp.png';
+import todoApp from '../assets/todoApp.png';
+import weatherApp from '../assets/weatherLogo.jpg';
 import ProjectCard from '../common/ProjectCard';
 
 function Projects() {
@@ -11,28 +11,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
+          src={PM}
+          link="https://project-manager-715.netlify.app/"
+          h3="WealthBuilder"
+          p="Project Management App."
+        />
+        <ProjectCard
+          src={todoApp}
           link="https://to-do-app-cb459.web.app/"
-          h3="To Do App"
-          p="arr"
+          h3="TaskMaster"
+          p="To Do App."
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={weatherApp}
+          link="https://weather-app-737e1.web.app/"
+          h3="WeatherWise"
+          p="Weather App."
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={investmentCalc}
+          link="https://investment-calculator-715.netlify.app/"
+          h3="WealthBuilder"
+          p="Investment Calculator App."
         />
       </div>
     </section>

@@ -36,7 +36,7 @@ function Hero() {
         <h1>
           Ahmed <br /> Abuelyazeed
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>Software Developer</h2>
         <span>
           <a href="https://www.linkedin.com/in/ahmed-abuelyazeed-690393230/">
             <img src={linkedinIcon} alt="Linkedin Icon" />
@@ -46,8 +46,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          With a passion for crafting modern, user-friendly web applications
+          that enhance user experiences.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>

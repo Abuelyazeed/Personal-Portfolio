@@ -3,6 +3,7 @@ import PmLogo from '../assets/logo.png';
 import investmentCalcLogo from '../assets/investmentApp.png';
 import todoAppLogo from '../assets/todoApp.png';
 import weatherAppLogo from '../assets/weatherLogo.jpg';
+import gridLogo from '../assets/gridLogo.png';
 import ProjectCard from '../common/ProjectCard';
 
 function Projects() {
@@ -11,9 +12,15 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
+          src={gridLogo}
+          link="https://github.com/Abuelyazeed/GRID-main"
+          h3="GRID"
+          p="Internship Project"
+        />
+        <ProjectCard
           src={PmLogo}
           link="https://project-manager-715.netlify.app/"
-          h3="WealthBuilder"
+          h3="ProjectTracker"
           p="Project Management App."
         />
         <ProjectCard

@@ -31,7 +31,7 @@ function Skills() {
         <SkillList skill="SQL" />
       </div>
       <hr />
-      <h3 className={styles.categoryTitle}>Tools And Technologies</h3>
+      <h3 className={styles.categoryTitle}>Additional Skills and Expertise</h3>
       <div className={styles.skillList}>
         <SkillList skill="Git/GitHub" />
         <SkillList skill="Responsive Design" />

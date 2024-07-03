@@ -38,10 +38,18 @@ function Hero() {
         </h1>
         <h2>Software Developer</h2>
         <span>
-          <a href="https://www.linkedin.com/in/ahmed-abuelyazeed-690393230/">
+          <a
+            href="https://www.linkedin.com/in/ahmed-abuelyazeed-690393230/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedinIcon} alt="Linkedin Icon" />
           </a>
-          <a href="https://github.com/Abuelyazeed">
+          <a
+            href="https://github.com/Abuelyazeed"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={githubIcon} alt="Linkedin Icon" />
           </a>
         </span>
